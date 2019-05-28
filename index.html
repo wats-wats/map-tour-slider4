@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Dragon76</title>
+  <title>Transit</title>
+  
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="css/swiper.min.css">
 
@@ -31,7 +32,6 @@
       background-size: cover !important;
       background-repeat: no-repeat !important;
       background-position: center !important;
-
       /* Center slide text vertically */
       display: -webkit-box;
       display: -ms-flexbox;
@@ -46,26 +46,21 @@
       -webkit-align-items: center;
       align-items: center;
     }
-
     .swiper-pagination-bullet {
       width: 20px;
-      height: 20px
+      height: 20px;
       text-align: center;
       line-height: 20px;
       font-size: 12px;
-      background: #CC6633
+      background: #CC6633;
       opacity: 0.5;
       margin: 0px 6px !important;
       transition: width 0.2s, height 0.2s, opacity 0.2s;
     }
-
-    .swiper-pagination-bullet:hover {
-      opacity: 0.9;
-    }
     .swiper-pagination-bullet-active {
       opacity: 1;
       color:#FFFF00;
-      background:#007aff
+      background: #007aff;
     }
     }
   </style>
@@ -95,7 +90,7 @@
         el: '.swiper-pagination',
         clickable: true,
         renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (index +1) '</span>';
+          return '<span class="' + className + '">' + (index +1) + '</span>';
         },
       },
     });
